@@ -15,27 +15,24 @@ i18next.init(
   resources: {
     en: {
       translation: {
-        paragr: "hello world",
-        changeLang: "change luange",
+        changeLang: "change language",
         btn2: "Send",
-        container: "I accept"
+        accept: "I accept"
       }
     },
     ru: {
       translation: {
-        paragr: "привет мир",
         changeLang: "сменить язык",
         btn2: "Отправить",
-        container: "Я принимаю условия"
+        accept: "Я принимаю условия"
       }
     }
   }
   },
 function (err, t) {
-document.getElementById("paragr").innerHTML = i18next.t("paragr");
 document.getElementById("btn").innerHTML = i18next.t("changeLang");
 document.getElementById("btn2").innerHTML = i18next.t("btn2");
-document.getElementsByClassName("container").innerHTML = i18next.t("container");
+document.getElementById("accept").innerHTML = i18next.t("accept");
 }
 );
 const btn = document.getElementById('btn');
@@ -46,10 +43,8 @@ i18next.changeLanguage(lang, (err, t) => {
   if (err) {
   return console.log('something went wrong loading', err);
   }
-
-document.getElementById('paragr').innerHTML = t('paragr');
 document.getElementById('btn').innerHTML = t('changeLang');
 document.getElementById('btn2').innerHTML = t('btn2');
-document.getElementsByClassName('container').innerHTML = t('container');
+document.getElementById('accept').innerHTML = t('accept');
 });
 }
