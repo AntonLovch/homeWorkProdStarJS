@@ -66,3 +66,11 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+#names {
+  margin:  10px 0;
+}
+
+#mail {
+  margin:  10px 0;
+}
