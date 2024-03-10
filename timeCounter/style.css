@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(186, 128, 241);
+}
+
+ #time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top:150px;
+    font-size: 42px;
+ }
